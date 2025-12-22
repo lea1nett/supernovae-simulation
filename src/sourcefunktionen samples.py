@@ -1,3 +1,6 @@
+## sourcefunctions based on simple stellar population
+## synthesis models (in astrophysics)
+
 import numpy as np
 
 def sample_salpeter(n, m_min=0.1, m_max=100.0, alpha=2.35):
