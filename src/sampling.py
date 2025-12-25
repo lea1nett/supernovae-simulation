@@ -51,9 +51,10 @@ def stellar_endpoint(masses):
         - Neutron Star (NS) for 8 M_sun ≤ M < 20 M_sun
         - Black Hole (BH) for M ≥ 20 M_sun
     """
-     if masses < 8.0:
+    if masses < 8.0:
          return('WD')
     elif 8.0 <= masses < 20.0:
-        return('NS')
+         return('NS')
     else:
         return('BH')    
+
