@@ -2,8 +2,9 @@
 
 import numpy as np
 
-def sample_supernovae_types(masses):
+def core_collapse_SN_type(masses):
     """
+    (single star layer function)
     Classify supernova types based on progenitor masses.
     """
     if masses < 8.0:
@@ -17,6 +18,7 @@ def sample_supernovae_types(masses):
     
 def is_type_ia(masses, binary_fraction=0.5, ia_efficiency=0.02):
     """
+    (single star layer function)
     Determine if a star will undergo a Type Ia supernova.
     Type Ia supernovae are thought to originate from white dwarfs in binary systems.
     type Ia needs: low mass star + binary system + some efficiency factor
