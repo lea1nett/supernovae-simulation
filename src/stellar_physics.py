@@ -1,3 +1,7 @@
+# stellar_physics.py
+
+import numpy as np
+
 def ms_lifetime_years(masses, metallicities):
     """
     (single star layer function)
