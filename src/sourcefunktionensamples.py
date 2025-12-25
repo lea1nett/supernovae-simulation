@@ -30,10 +30,10 @@ def sample_metallicity(n, Z_min=0.0001, Z_max=0.03):
     return metallicities
 
 
-def ms_lifetimes_years(masses, metallicities):
+def ms_lifetime_years(masses, metallicities):
     """
     (single star layer function)
-    Calculate main-sequence lifetimes in years for given stellar masses (in solar masses).
+    Calculate main-sequence lifetime in years for given stellar masses (in solar masses).
     
     The formula used is:
         t_MS ∝ M^(-2.5) * (Z / Z_sun)^0.2
@@ -42,19 +42,18 @@ def ms_lifetimes_years(masses, metallicities):
     return 1e10 * (masses**-2.5)*(metallicities/0.014)**0.2
 
 
-def stellar_endpoints(masses):
+def stellar_endpoint(masses):
     """
     (single star layer function)
-    Determine the stellar endpoints based on mass and metallicity.
+    Determine the stellar endpoint based on mass and metallicity.
     For simplicity, we classify endpoints as:
         - White Dwarf (WD) for M < 8 M_sun
         - Neutron Star (NS) for 8 M_sun ≤ M < 20 M_sun
         - Black Hole (BH) for M ≥ 20 M_sun
     """
-    for m in masses:
-        if m < 8.0:
-            return('WD')
-        elif 8.0 <= m < 20.0:
-            return('NS')
-        else:
-            return('BH')
+     if masses < 8.0:
+         return('WD')
+    elif 8.0 <= masses < 20.0:
+        return('NS')
+    else:
+        return('BH')    
