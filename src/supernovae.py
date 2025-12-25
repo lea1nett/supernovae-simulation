@@ -8,7 +8,7 @@ def core_collapse_SN_type(masses):
     Classify supernova types based on progenitor masses.
     """
     if masses < 8.0:
-        return 'No SN'
+        return None
     elif 8.0 <= masses < 20.0:
         return 'Type II'    
     elif 20.0 <= masses < 40.0:
