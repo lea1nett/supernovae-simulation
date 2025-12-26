@@ -1,9 +1,11 @@
-def run_single_mc(
-    N,
-    m_max,
-    m_min=0.1,
-    alpha=2.35
-):
+
+import numpy as np
+from sampling import sample_salpeter, sample_metallicity
+from stellar_physics import ms_lifetime_years, stellar_endpoint
+from supernovae import core_collapse_SN_type, is_type_ia
+
+
+def run_single_mc(N, m_max, m_min=0.1, alpha=2.35):
     """
     Run one Monte Carlo realization for a given maximum stellar mass.
     Returns SN counts.
@@ -32,11 +34,9 @@ def run_single_mc(
         "total": n_core_collapse + n_typeIa
     }
 
-def mc_statistics(
-    N,
-    m_max,
-    n_realizations=100
-):
+
+
+def mc_statistics(N, m_max, n_realizations=100):
     """
     Run multiple MC realizations and compute statistics.
     """
