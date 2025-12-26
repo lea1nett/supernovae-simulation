@@ -1,8 +1,8 @@
 
 import numpy as np
-from sampling import sample_salpeter, sample_metallicity
-from stellar_physics import ms_lifetime_years, stellar_endpoint
-from supernovae import core_collapse_SN_type, is_type_ia
+from src.sampling import sample_salpeter, sample_metallicity
+from src.stellar_physics import ms_lifetime_years, stellar_endpoint
+from src.supernovae import core_collapse_SN_type, is_type_ia
 
 
 def run_single_mc(N, m_max, m_min=0.1, alpha=2.35):
@@ -20,18 +20,18 @@ def run_single_mc(N, m_max, m_min=0.1, alpha=2.35):
 
     # Supernova bookkeeping
     n_core_collapse = 0
-    n_typeIa = 0
+    n_type_ia = 0
 
     for m, ep in zip(masses, endpoints):
         if core_collapse_SN_type(m) is not None:
             n_core_collapse += 1
-        elif is_typeIa_SN(ep):
-            n_typeIa += 1
+        elif is_type_ia(ep):
+            n_type_ia += 1
 
     return {
         "core_collapse": n_core_collapse,
-        "typeIa": n_typeIa,
-        "total": n_core_collapse + n_typeIa
+        "type_ia": n_type_ia,
+        "total": n_core_collapse + n_type_ia
     }
 
 
@@ -43,7 +43,7 @@ def mc_statistics(N, m_max, n_realizations=100):
 
     results = {
         "core_collapse": [],
-        "typeIa": [],
+        "type_ia": [],
         "total": []
     }
 
