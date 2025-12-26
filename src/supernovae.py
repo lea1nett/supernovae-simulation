@@ -23,7 +23,11 @@ def is_type_ia(masses, binary_fraction=0.5, ia_efficiency=0.02):
     Type Ia supernovae are thought to originate from white dwarfs in binary systems.
     type Ia needs: low mass star + binary system + some efficiency factor
     """
-    if float(masses) >= 8:
+    try:
+        masses = float(masses)
+    except ValueError:
+        return False
+    if masses >= 8:
         return False
     if np.random.random() > binary_fraction:
         return False
