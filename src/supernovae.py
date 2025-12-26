@@ -22,6 +22,10 @@ def is_type_ia(masses, binary_fraction=0.5, ia_efficiency=0.02):
     Determine if a star will undergo a Type Ia supernova.
     Type Ia supernovae are thought to originate from white dwarfs in binary systems.
     type Ia needs: low mass star + binary system + some efficiency factor
+    
+    annahme: fester bruchteil weisser zwerge führt IRGENDWANN zu einer type-ia-sn.
+    hier: keine binärsysteme -> keine type ia-sn
+    aber: mal schauen
     """
     try:
         masses = float(masses)
