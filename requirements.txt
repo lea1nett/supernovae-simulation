@@ -1,1 +1,9 @@
-haha
+numpy>=1.22
+matplotlib>=3.5
+pandas>=1.5
+tabulate>=0.9
+
+
+## Reproducibility
+
+A fixed random seed is set at the beginning of the Monte Carlo simulation.
