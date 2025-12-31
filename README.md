@@ -27,7 +27,7 @@ Explanation of astrophysics: !!!
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 - `src/` contains all physical and stochastic model functions  
 - `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis  
