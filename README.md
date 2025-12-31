@@ -7,6 +7,8 @@ Only the evolution of isolated single stars is considered.
 The focus is on core-collapse supernovae. Type Ia supernovae do not occur in the model,
 as binary stellar evolution is not included.
 
+Explanation of astrophysics: !!!
+
 ---
 
 ## Project Structure
@@ -78,6 +80,8 @@ for different values of the maximum stellar mass.
 |  50.0 |     ...   |    ...   |       ...     |        ...     |
 |  80.0 |     ...   |    ...   |       ...     |        ...     |
 | 120.0 |     ...   |    ...   |       ...     |        ...     |
+| 150.0 |     ...   |    ...   |       ...     |        ...     |
+| 200.0 |     ...   |    ...   |       ...     |        ...     |
 
 
 ---

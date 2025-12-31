@@ -1,0 +1,8 @@
+date
+
+authors
+
+pythonversion
+
+paketversions
+
