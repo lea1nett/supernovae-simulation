@@ -13,9 +13,12 @@ Explanation of astrophysics: !!!
 
 ## Project Structure
 
+```text
+.
 ├── src/
-│ ├── init.py
+│ ├── __init__.py
 │ ├── sampling.py
+│ ├── mc_functions.py
 │ ├── stellar_physics.py
 │ └── supernovae.py
 │
