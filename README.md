@@ -69,20 +69,14 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 > *(The table was automatically generated from the simulation results.)*
 
-<!-- INSERT df.to_markdown() TABLE HERE --> ## Simulation Results
-
-The table below summarizes the results of the Monte Carlo simulation
-for different values of the maximum stellar mass.
-
-| M_max | CCSN_mean | CCSN_std | CCSN_CI68_low | CCSN_CI68_high |
-|------:|----------:|---------:|--------------:|---------------:|
-|  30.0 |     ...   |    ...   |       ...     |        ...     |
-|  50.0 |     ...   |    ...   |       ...     |        ...     |
-|  80.0 |     ...   |    ...   |       ...     |        ...     |
-| 120.0 |     ...   |    ...   |       ...     |        ...     |
-| 150.0 |     ...   |    ...   |       ...     |        ...     |
-| 200.0 |     ...   |    ...   |       ...     |        ...     |
-
+|   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
+|--------:|------------:|-----------:|----------------:|-----------------:|
+|   30.00 |      226.27 |      15.98 |          196.47 |           259.20 |
+|   50.00 |      246.07 |      16.64 |          211.00 |           277.00 |
+|   80.00 |      259.83 |      15.71 |          231.47 |           289.00 |
+|  120.00 |      261.58 |      14.18 |          235.47 |           286.57 |
+|  150.00 |      264.27 |      17.90 |          227.47 |           296.52 |
+|  200.00 |      267.43 |      16.27 |          236.00 |           296.52 |
 
 ---
 
