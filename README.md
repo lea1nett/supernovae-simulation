@@ -7,14 +7,21 @@ Only the evolution of isolated single stars is considered.
 The focus is on core-collapse supernovae. Type Ia supernovae do not occur in the model,
 as binary stellar evolution is not included.
 
-Explanation of astrophysics: !!!
-
 ---
 
 ## Project Structure
 
 ```text
-.
+├── configs/
+│
+├── figures/
+│
+├── notebooks/
+│ └── monte_carlo.ipynb
+│
+├── reports/
+│ └── ABOUT.txt
+│
 ├── src/
 │ ├── __init__.py
 │ ├── sampling.py
@@ -22,29 +29,52 @@ Explanation of astrophysics: !!!
 │ ├── stellar_physics.py
 │ └── supernovae.py
 │
-├── notebooks/
-│ └── monte_carlo.ipynb
+├── tests/
 │
-├── requirements.txt
+├── environment.yml
 └── README.md
 ```
 
+- `configs/` contains seeds and parameters
+- NO `data/`, we do not have any data, we simply sample based on physics.
+- `figures/`contains png-plots
+- `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis
+- `reports/`contains short texts 
 - `src/` contains all physical and stochastic model functions  
-- `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis  
+- `tests/` contains tests
 
 ---
 
 ## Physical Model
 
-The simulation is based on the following assumptions:
+The simulation models the final evolutionary outcomes of a population of isolated
+single stars. Stellar masses are sampled from a Salpeter initial mass function (IMF),
+which favors the formation of low-mass stars while allowing for rare high-mass objects.
 
-- Stellar masses are sampled from a Salpeter initial mass function (IMF)
-- A population of isolated single stars is simulated
-- Core-collapse supernovae originate from stars above a fixed mass threshold
-- Type Ia supernovae are not modeled, as binary systems are not included
+The stellar endpoint is determined solely by the initial mass of the star:
 
-The model is intentionally simplified in order to isolate the effect of the maximum
-stellar mass on supernova rates.
+- **Low- and intermediate-mass stars**  
+  Stars with initial masses below the core-collapse threshold evolve through
+  the red giant and asymptotic giant branch phases and ultimately form white dwarfs.
+  These stars do not produce supernova explosions in isolation.
+
+- **Massive stars and core-collapse supernovae**  
+  Stars with sufficiently high initial masses undergo successive nuclear burning
+  stages up to iron. Once nuclear fusion can no longer provide pressure support,
+  the stellar core collapses under gravity, leading to a core-collapse supernova
+  (Type II or related subtypes). In the model, all such events are grouped together
+  as core-collapse supernovae.
+
+- **Type Ia supernovae**  
+  Type Ia supernovae originate from thermonuclear explosions of white dwarfs in
+  binary systems, typically through mass accretion or mergers. Since binary stellar
+  evolution is not included in this model, Type Ia supernovae do not occur in the
+  simulation.
+
+The model neglects metallicity effects, rotation, mass loss, and binary interactions.
+Its purpose is not to reproduce realistic astrophysical rates, but to isolate and
+analyze the statistical impact of the maximum stellar mass on supernova occurrence
+within a simplified and controlled framework.
 
 ---
 
