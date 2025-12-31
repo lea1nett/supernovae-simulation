@@ -115,19 +115,43 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 ## Reproducibility
 
-- Python version: >= 3.9
-- All external dependencies are listed in `requirements.txt`
-- The simulation is fully reproducible when using the same code and random seed
+The simulation environment is fully specified using a Conda environment file
+(`environment.yml`). This ensures that the simulation can be reproduced with
+identical library versions across different systems.
+
+- Python version: as specified in `environment.yml`
+- All required dependencies are listed explicitly in the environment file
+- A fixed random seed is used in the Monte Carlo simulation to ensure
+  deterministic results
+
+When the environment is created from the provided file and the same code is used,
+the simulation results are fully reproducible.
 
 ---
 
 ## How to Run the Simulation
 
-1. Create and activate a virtual environment
-2. Install dependencies:
+1. Ensure that Conda (or Miniconda) is installed on your system.
+
+2. Create the Conda environment from the provided `environment.yml` file:
    ```bash
-   pip install -r requirements.txt
-3. run the jupyter notebook notebooks/monte_carlo.ipynb
+   conda env create -f environment.yml
+   ```
+
+3. Activate the environment:
+   ```bash
+   conda activate myenvo
+   ```
+
+4. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
+
+5. Open and run the Notebook:
+   ```bash
+   notebooks/monte_carlo.ipynb
+   ```
 
 ---
 
