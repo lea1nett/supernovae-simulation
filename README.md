@@ -15,6 +15,9 @@ as binary stellar evolution is not included.
 ├── configs/
 │
 ├── figures/
+│ ├── ccsn_confidence_intervalls.png
+│ ├── ccsn_vs_m_max.png
+│ └── single_star_population_results.png
 │
 ├── notebooks/
 │ └── monte_carlo.ipynb
@@ -40,7 +43,8 @@ as binary stellar evolution is not included.
 - `figures/`contains png-plots
 - `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis
 - `reports/`contains short texts 
-- `src/` contains all physical and stochastic model functions  
+- `src/` contains all physical and stochastic model functions as well as the functions for
+   multiple monte-carlo runs.
 - `tests/` contains tests
 
 ---
@@ -176,5 +180,6 @@ not as absolute astrophysical supernova rates
 ## Author / Context
 
 This project was developed as part of a university-level project on simulation tools.
+more information in `reports/ABOUT.txt`
 
 ---
