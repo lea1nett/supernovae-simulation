@@ -68,13 +68,19 @@ The stellar endpoint is determined solely by the initial mass of the star:
 - **Type Ia supernovae**  
   Type Ia supernovae originate from thermonuclear explosions of white dwarfs in
   binary systems, typically through mass accretion or mergers. Since binary stellar
-  evolution is not included in this model, Type Ia supernovae do not occur in the
-  simulation.
+  evolution is not included in this model, Type Ia supernovae occur in the single 
+  star population statistic, but not in the Monte-Carlo simulation.
 
 The model neglects metallicity effects, rotation, mass loss, and binary interactions.
 Its purpose is not to reproduce realistic astrophysical rates, but to isolate and
 analyze the statistical impact of the maximum stellar mass on supernova occurrence
 within a simplified and controlled framework.
+
+---
+
+## Single Star Population
+
+
 
 ---
 
@@ -98,7 +104,8 @@ A fixed random seed is set at the beginning of the simulation to ensure reproduc
 
 The table below summarizes the main results of the Monte Carlo simulation.
 It lists the mean number of core-collapse supernovae as well as the corresponding
-68% confidence intervals for different values of the maximum stellar mass.
+95% confidence intervals for different values of the maximum stellar mass.
+More information can be found in `reports/report`
 
 > *(The table was automatically generated from the simulation results.)*
 
@@ -168,7 +175,6 @@ not as absolute astrophysical supernova rates
 
 ## Author / Context
 
-This project was developed as part of a university-level project on numerical
-modeling of astrophysical processes.
+This project was developed as part of a university-level project on simulation tools.
 
 ---
