@@ -19,9 +19,6 @@ as binary stellar evolution is not included.
 │ ├── ccsn_vs_m_max.png
 │ └── single_star_population_results.png
 │
-├── notebooks/
-│ └── monte_carlo.ipynb
-│
 ├── reports/
 │ └── ABOUT.txt
 │
@@ -35,12 +32,15 @@ as binary stellar evolution is not included.
 ├── tests/
 │
 ├── environment.yml
+│
+├── monte_carlo.ipynb
+│
 └── README.md
 ```
 
 - `configs/` contains seeds and parameters
 - NO `data/`, we do not have any data, we simply sample based on physics.
-- `figures/`contains png-plots
+- `figures/`contains png-plots generated in the notebok
 - `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis
 - `reports/`contains short texts 
 - `src/` contains all physical and stochastic model functions as well as the functions for
