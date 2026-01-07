@@ -20,7 +20,8 @@ Type Ia supernovae do not occur in the model, as binary stellar evolution is not
 │ └── single_star_population_results.png
 │
 ├── reports/
-│ └── ABOUT.txt
+│ ├── ABOUT.txt
+│ └── supernovae_results.md
 │
 ├── src/
 │ ├── __init__.py
@@ -123,7 +124,7 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 ## Additional Results
 
-A concise summary of the numerical results, including tables and short interpretations,
+A concise summary of the numerical results, including a short interpretation,
 is provided in a separate report:
 [`reports/supernova_results.md`](reports/supernovae_results.md)
 
