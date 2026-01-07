@@ -1,7 +1,7 @@
 # Monte Carlo Simulation of Supernova Rates
 
 This project investigates the influence of the maximum stellar mass on supernova
-rates in a stellar populations using a Monte Carlo simulation approach.
+rates in a stellar populations using a Monte Carlo simulation approach.  
 Only the evolution of isolated single stars is considered.
 
 ---
@@ -82,9 +82,9 @@ within a simplified and controlled framework.
 
 ## Single Star Population
 
-A single-scenario star population is generated.
-Each star has a definite mass, metallicity, lifetime and endstate.
-These properties are sampled using astrophysical functions.
+A single-scenario star population is generated.  
+Each star has a definite mass, metallicity, lifetime and endstate.  
+These properties are sampled using astrophysical functions.  
 Afterwards it is determined, which type of supernovae each star may become.
 
 ---
@@ -105,11 +105,11 @@ intervals are computed.
 
 ## Simulation Results
 
-The table below summarizes the main results of the Monte Carlo simulation.
+The table below summarizes the main results of the Monte Carlo simulation.  
 It lists the mean number of core-collapse supernovae as well as the corresponding
 95% confidence intervals for different values of the maximum stellar mass.
 
-> *(The table was automatically generated from the simulation results.)*
+*(The table was automatically generated from the simulation results.)*
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
 |--------:|------------:|-----------:|----------------:|-----------------:|
@@ -122,9 +122,9 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 ## Model Limitations 
 
-The focus is on core-collapse supernovae. 
-Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.
-Additionly, no time evolution or delay times are modeled.
+The focus is on core-collapse supernovae.  
+Type Ia supernovae do not occur in the model, as binary stellar evolution is not included. 
+Additionly, no time evolution or delay times are modeled.  
 The results should therefore be interpreted as comparative trends,
 not as absolute astrophysical supernova rates.
 
@@ -139,8 +139,8 @@ on the model limitations, is provided in a separate report:
 ## Reproducibility
 
 The simulation environment is fully specified using a Conda environment file
-([`environment.yml`](environment.yml)). This ensures that the simulation can be reproduced with
-identical library versions across different systems.
+([`environment.yml`](environment.yml)).  
+This ensures that the simulation can be reproduced with identical library versions across different systems.
 
 - Python version: as specified in `environment.yml`
 - All required dependencies are listed explicitly in the environment file
@@ -180,7 +180,7 @@ the simulation results are fully reproducible.
 
 ## Author / Context
 
-This project was developed as part of a university-level project on simulation tools.
+This project was developed as part of a university-level project on simulation tools.  
 more information in [`reports/ABOUT.txt`](reports/ABOUT.txt)
 
 ---
