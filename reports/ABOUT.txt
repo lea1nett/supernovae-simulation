@@ -1,23 +1,17 @@
-date
+date:
+this project was created from december 5th to january 9th 2026
+last commit: january 9th 2026
 
-111
-
-
-authors
-
+authors/contributors:
 Lea Nettersheim
-git: 
+git: lea1nett
 Tim Nekel
-git: 
-
+git: lea2n
 
 pythonversion
-
 python>=3.13
 
-
 paketversions
-
 numpy>=1.22
 matplotlib>=3.5
 pandas>=1.5
