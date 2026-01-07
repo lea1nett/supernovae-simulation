@@ -4,9 +4,7 @@ last commit: january 9th 2026
 
 authors/contributors:
 Lea Nettersheim
-git: lea1nett
 Tim Nekel
-git: lea2n
 
 pythonversion
 python>=3.13

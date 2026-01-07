@@ -4,8 +4,8 @@ This project investigates the influence of the maximum stellar mass on supernova
 rates in a stellar population using a Monte Carlo simulation approach.
 Only the evolution of isolated single stars is considered.
 
-The focus is on core-collapse supernovae. Type Ia supernovae do not occur in the model,
-as binary stellar evolution is not included.
+The focus is on core-collapse supernovae. 
+Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.
 
 ---
 
@@ -41,11 +41,11 @@ as binary stellar evolution is not included.
 - `configs/` contains seeds and parameters
 - NO `data/`, we do not have any data, we simply sample based on physics.
 - `figures/`contains png-plots generated in the notebok
-- `notebooks/` contains the Jupyter notebook used to run the simulation and perform the analysis
 - `reports/`contains short texts 
 - `src/` contains all physical and stochastic model functions as well as the functions for
    multiple monte-carlo runs.
 - `tests/` contains tests
+- `monte_carlo.ipynb` is the jupyter notebook used to run the simulation and perform the analysis
 
 ---
 
@@ -90,9 +90,9 @@ within a simplified and controlled framework.
 
 ## Monte Carlo Method
 
-For each scenario with a fixed maximum stellar mass \( M_{\mathrm{max}} \):
+For each scenario with a fixed maximum stellar mass `M_max`:
 
-1. a population of \( N \) stars is generated,
+1. a population of `N` stars is generated,
 2. stellar endpoints are determined,
 3. the number of core-collapse supernovae is counted,
 4. and the procedure is repeated multiple times.
@@ -109,7 +109,6 @@ A fixed random seed is set at the beginning of the simulation to ensure reproduc
 The table below summarizes the main results of the Monte Carlo simulation.
 It lists the mean number of core-collapse supernovae as well as the corresponding
 95% confidence intervals for different values of the maximum stellar mass.
-More information can be found in `reports/report`
 
 > *(The table was automatically generated from the simulation results.)*
 
@@ -121,6 +120,13 @@ More information can be found in `reports/report`
 |  120.00 |      260.04 |      16.66 |          230.22 |           292.97 |
 |  150.00 |      261.38 |      14.29 |          237.45 |           291.55 |
 |  200.00 |      271.12 |      16.79 |          236.90 |           299.32 |
+
+## Additional Results
+
+A concise summary of the numerical results, including tables and short interpretations,
+is provided in a separate report:
+
+- [`reports/supernova_results.md`](reports/supernovae_results.md)
 
 ---
 
