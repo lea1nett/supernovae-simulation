@@ -125,15 +125,14 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 A concise summary of the numerical results, including tables and short interpretations,
 is provided in a separate report:
-
-- [`reports/supernova_results.md`](reports/supernovae_results.md)
+[`reports/supernova_results.md`](reports/supernovae_results.md)
 
 ---
 
 ## Reproducibility
 
 The simulation environment is fully specified using a Conda environment file
-(`environment.yml`). This ensures that the simulation can be reproduced with
+([`environment.yml`](environment.yml)). This ensures that the simulation can be reproduced with
 identical library versions across different systems.
 
 - Python version: as specified in `environment.yml`
@@ -186,6 +185,6 @@ not as absolute astrophysical supernova rates
 ## Author / Context
 
 This project was developed as part of a university-level project on simulation tools.
-more information in `reports/ABOUT.txt`
+more information in [`reports/ABOUT.txt`](reports/ABOUT.txt)
 
 ---
