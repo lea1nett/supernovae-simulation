@@ -21,9 +21,16 @@ The reported values represent statistical summaries over these realizations.
 
 The table below summarizes the results for different values of the maximum stellar
 mass \( M_{\mathrm{max}} \). Reported are the mean number of core-collapse supernovae,
-the standard deviation, and the 68% confidence interval.
+the standard deviation, and the 95% confidence interval.
 
-<!-- INSERT df.to_markdown() TABLE HERE -->
+|   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
+|--------:|------------:|-----------:|----------------:|-----------------:|
+|   30.00 |      223.03 |      13.72 |          200.90 |           248.00 |
+|   50.00 |      244.84 |      15.45 |          218.00 |           271.52 |
+|   80.00 |      257.87 |      15.32 |          230.90 |           288.05 |
+|  120.00 |      262.15 |      14.24 |          236.00 |           286.05 |
+|  150.00 |      265.78 |      16.05 |          237.47 |           292.00 |
+|  200.00 |      266.52 |      15.80 |          236.47 |           295.57 |
 
 ---
 

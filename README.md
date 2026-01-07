@@ -1,11 +1,8 @@
 # Monte Carlo Simulation of Supernova Rates
 
 This project investigates the influence of the maximum stellar mass on supernova
-rates in a stellar population using a Monte Carlo simulation approach.
+rates in a stellar populations using a Monte Carlo simulation approach.
 Only the evolution of isolated single stars is considered.
-
-The focus is on core-collapse supernovae. 
-Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.
 
 ---
 
@@ -85,7 +82,10 @@ within a simplified and controlled framework.
 
 ## Single Star Population
 
-
+A single-scenario star population is generated.
+Each star has a definite mass, metallicity, lifetime and endstate.
+These properties are sampled using astrophysical functions.
+Afterwards it is determined, which type of supernovae each star may become.
 
 ---
 
@@ -100,8 +100,6 @@ For each scenario with a fixed maximum stellar mass `M_max`:
 
 From the repeated realizations, mean values, standard deviations, and confidence
 intervals are computed.
-
-A fixed random seed is set at the beginning of the simulation to ensure reproducibility.
 
 ---
 
@@ -122,10 +120,18 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 |  150.00 |      261.38 |      14.29 |          237.45 |           291.55 |
 |  200.00 |      271.12 |      16.79 |          236.90 |           299.32 |
 
+## Model Limitations 
+
+The focus is on core-collapse supernovae. 
+Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.
+Additionly, no time evolution or delay times are modeled.
+The results should therefore be interpreted as comparative trends,
+not as absolute astrophysical supernova rates.
+
 ## Additional Results
 
-A concise summary of the numerical results, including a short interpretation,
-is provided in a separate report:
+A concise summary of the numerical results, including a short interpretation and further details 
+on the model limitations, is provided in a separate report:
 [`reports/supernova_results.md`](reports/supernovae_results.md)
 
 ---
@@ -169,17 +175,6 @@ the simulation results are fully reproducible.
    ```bash
    notebooks/monte_carlo.ipynb
    ```
-
----
-
-## Model Limitations
-
-Binary stellar evolution is not included
-
-No time evolution or delay times are modeled
-
-The results should therefore be interpreted as comparative trends,
-not as absolute astrophysical supernova rates
 
 ---
 
