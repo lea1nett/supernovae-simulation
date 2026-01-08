@@ -1,13 +1,17 @@
 date:
 this project was created from december 5th to january 9th 2026
-last commit: january 9th 2026
+last commit: january 8th 2026
 
 authors/contributors:
 Lea Nettersheim
 Tim Nekel
 
-the project was created as part of a university-level project on simulation tools
-at the Georg Simon Ohm Technische Hochschule Nürnberg.
+the project was created as part of a university-level project.
+Uni: Georg Simon Ohm Technische Hochschule Nürnberg
+Course: Bachelor - Social Data Science and Communication
+Semester: Winter 2025/26
+Module: Simtools
+Teacher: Prof. Benedikt Mangold
 
 pythonversion
 python>=3.13
