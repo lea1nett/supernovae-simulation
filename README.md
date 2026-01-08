@@ -1,4 +1,4 @@
-<img src="configs/logo.png" alt="Logo" width="100" align="left" />  
+<img src="configs/logo.png" alt="Logo" width="120" align="left" />  
 
 # Monte Carlo Simulation of Supernova Rates
 
