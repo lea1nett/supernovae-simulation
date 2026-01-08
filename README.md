@@ -10,6 +10,7 @@ Only the evolution of isolated single stars is considered.
 
 ```text
 ├── configs/
+│ └── simulation.yml
 │
 ├── figures/
 │ ├── ccsn_confidence_intervalls.png
@@ -27,8 +28,6 @@ Only the evolution of isolated single stars is considered.
 │ ├── stellar_physics.py
 │ └── supernovae.py
 │
-├── tests/
-│
 ├── environment.yml
 │
 ├── monte_carlo.ipynb
@@ -37,13 +36,12 @@ Only the evolution of isolated single stars is considered.
 ```
 
 - `configs/` contains seeds and parameters
-- NO `data/`, we do not have any data, we simply sample based on physics.
 - `figures/`contains png-plots generated in the notebok
-- `reports/`contains short texts 
+- `reports/`contains the results in short texts 
 - `src/` contains all physical and stochastic model functions as well as the functions for
    multiple monte-carlo runs.
-- `tests/` contains tests
 - `monte_carlo.ipynb` is the jupyter notebook used to run the simulation and perform the analysis
+- all data is generated synthetically within the Monte Carlo simulations.
 
 ---
 
@@ -83,8 +81,7 @@ within a simplified and controlled framework.
 ## Single Star Population
 
 A single-scenario star population is generated.  
-Each star has a definite mass, metallicity, lifetime and endstate.  
-These properties are sampled using astrophysical functions.  
+Each star has a definite mass, metallicity, lifetime and endstate, these properties are sampled using astrophysical functions.  
 Afterwards it is determined, which type of supernovae each star may become.
 
 ---
@@ -105,25 +102,25 @@ intervals are computed.
 
 ## Simulation Results
 
-The table below summarizes the main results of the Monte Carlo simulation.  
+The table below summarizes representative results of the Monte Carlo simulation.  
 It lists the mean number of core-collapse supernovae as well as the corresponding
 95% confidence intervals for different values of the maximum stellar mass.
 
-*(The table was automatically generated from the simulation results.)*
+*(The table was automatically generated from simulation results.)*
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
 |--------:|------------:|-----------:|----------------:|-----------------:|
-|   30.00 |      223.76 |      16.72 |          197.00 |           261.62 |
-|   50.00 |      248.38 |      17.26 |          212.90 |           274.77 |
-|   80.00 |      260.88 |      18.29 |          230.22 |           294.00 |
-|  120.00 |      260.04 |      16.66 |          230.22 |           292.97 |
-|  150.00 |      261.38 |      14.29 |          237.45 |           291.55 |
-|  200.00 |      271.12 |      16.79 |          236.90 |           299.32 |
+|   30.00 |      223.03 |      13.72 |          200.90 |           248.00 |
+|   50.00 |      244.84 |      15.45 |          218.00 |           271.52 |
+|   80.00 |      257.87 |      15.32 |          230.90 |           288.05 |
+|  120.00 |      262.15 |      14.24 |          236.00 |           286.05 |
+|  150.00 |      265.78 |      16.05 |          237.47 |           292.00 |
+|  200.00 |      266.52 |      15.80 |          236.47 |           295.57 |
 
 ## Model Limitations 
 
 The focus is on core-collapse supernovae.  
-Type Ia supernovae do not occur in the model, as binary stellar evolution is not included. 
+Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.   
 Additionly, no time evolution or delay times are modeled.  
 The results should therefore be interpreted as comparative trends,
 not as absolute astrophysical supernova rates.
@@ -137,6 +134,8 @@ on the model limitations, is provided in a separate report:
 ---
 
 ## Reproducibility
+
+The simulation results are reproducible in a statistical sense.
 
 The simulation environment is fully specified using a Conda environment file
 ([`environment.yml`](environment.yml)).  

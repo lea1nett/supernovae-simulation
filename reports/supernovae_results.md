@@ -12,6 +12,7 @@ supernova rate on the maximum stellar mass.
 - Only isolated single stars are considered.
 - Core-collapse supernovae are identified based on an initial mass threshold.
 - Each scenario is evaluated using repeated Monte Carlo realizations.
+- Simple unit tests were added to validate core components of the simulation logic.
 
 The reported values represent statistical summaries over these realizations.
 
@@ -20,7 +21,7 @@ The reported values represent statistical summaries over these realizations.
 ## Core-Collapse Supernova Statistics
 
 The table below summarizes the results for different values of the maximum stellar
-mass \( M_{\mathrm{max}} \). Reported are the mean number of core-collapse supernovae,
+mass `M_max`. Reported are the mean number of core-collapse supernovae,
 the standard deviation, and the 95% confidence interval.
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
@@ -50,3 +51,4 @@ is stable and monotonic across the explored parameter range.
 The results are based on a simplified model that neglects binary stellar evolution,
 metallicity effects, and time-dependent processes. The reported values should therefore
 be interpreted as comparative trends rather than absolute astrophysical rates.
+ 
