@@ -32,4 +32,4 @@ confidence_intervals:
 
 output:
   figures_dir: "figures"
-  results_file: "simulation_results.csv"
+  results_file: "simulation_results"
