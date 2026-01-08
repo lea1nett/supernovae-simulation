@@ -2,9 +2,7 @@
 
 # Monte Carlo Simulation of Supernova Rates
 
-This project investigates the influence of the maximum stellar mass on supernova
-rates in a stellar populations using a Monte Carlo simulation approach.  
-Only the evolution of isolated single stars is considered.
+### This project investigates the influence of the maximum stellar mass on supernova rates in a stellar populations using a Monte Carlo simulation approach. Only the evolution of isolated single stars is considered.
 
 ---
 
