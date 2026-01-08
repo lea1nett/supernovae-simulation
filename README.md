@@ -1,6 +1,6 @@
 <img src="configs/logo.jpg" alt="Logo" width="80" align="left" />
 
-# Monte Carlo Simulation of Supernova Rates
+# Monte Carlo Simulation of Supernova Rates with varying maximum mass
 
 This project investigates the influence of the maximum stellar mass on supernova
 rates in a stellar populations using a Monte Carlo simulation approach.  
