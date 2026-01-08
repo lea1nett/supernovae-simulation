@@ -10,6 +10,7 @@
 
 ```text
 ├── configs/
+│ ├── logo.png
 │ └── simulation.yml
 │
 ├── figures/

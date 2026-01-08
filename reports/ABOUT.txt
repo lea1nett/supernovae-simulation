@@ -6,6 +6,9 @@ authors/contributors:
 Lea Nettersheim
 Tim Nekel
 
+the project was created as part of a university-level project on simulation tools
+at the Georg Simon Ohm Technische Hochschule Nürnberg.
+
 pythonversion
 python>=3.13
 
