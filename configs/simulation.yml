@@ -1,3 +1,7 @@
+# Simulation configuration file
+# parameters are defined in the notebook 'monte_carlo.ipynb'
+# This file is additionally used to store metadata about the simulation
+
 random_seed: 42
 
 monte_carlo:
