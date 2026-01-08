@@ -1,3 +1,5 @@
+![Logo](./configs/logo.jpg)
+
 # Monte Carlo Simulation of Supernova Rates
 
 This project investigates the influence of the maximum stellar mass on supernova
