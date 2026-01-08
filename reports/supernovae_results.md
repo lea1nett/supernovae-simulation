@@ -26,12 +26,12 @@ the standard deviation, and the 95% confidence interval.
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
 |--------:|------------:|-----------:|----------------:|-----------------:|
-|   30.00 |      223.03 |      13.72 |          200.90 |           248.00 |
-|   50.00 |      244.84 |      15.45 |          218.00 |           271.52 |
-|   80.00 |      257.87 |      15.32 |          230.90 |           288.05 |
-|  120.00 |      262.15 |      14.24 |          236.00 |           286.05 |
-|  150.00 |      265.78 |      16.05 |          237.47 |           292.00 |
-|  200.00 |      266.52 |      15.80 |          236.47 |           295.57 |
+|      30 |      226.27 |    15.9835 |         196.475 |          259.2   |
+|      50 |      246.07 |    16.642  |         211     |          277     |
+|      80 |      259.83 |    15.714  |         231.475 |          289     |
+|     120 |      261.58 |    14.1836 |         235.475 |          286.575 |
+|     150 |      264.27 |    17.8958 |         227.475 |          296.525 |
+|     200 |      267.43 |    16.2706 |         236     |          296.525 |
 
 ---
 
@@ -48,7 +48,11 @@ is stable and monotonic across the explored parameter range.
 
 ## Notes on Model Limitations
 
+The focus is on core-collapse supernovae.  
 The results are based on a simplified model that neglects binary stellar evolution,
-metallicity effects, and time-dependent processes. The reported values should therefore
-be interpreted as comparative trends rather than absolute astrophysical rates.
+metallicity effects, and time-dependent processes.  
+The reported values should therefore be interpreted as comparative trends rather than absolute astrophysical rates.
+Its purpose is not to reproduce realistic astrophysical rates, but to isolate and
+analyze the statistical impact of the maximum stellar mass on supernova occurrence
+within a simplified and controlled framework.
  

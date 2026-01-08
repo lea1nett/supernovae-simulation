@@ -35,13 +35,13 @@ Only the evolution of isolated single stars is considered.
 └── README.md
 ```
 
-- `configs/` contains seeds and parameters
+- `configs/` contains seeds and parameters, this is **not needed** to run the simulation
 - `figures/`contains png-plots generated in the notebok
 - `reports/`contains the results in short texts 
 - `src/` contains all physical and stochastic model functions as well as the functions for
-   multiple monte-carlo runs.
+   multiple monte-carlo runs
 - `monte_carlo.ipynb` is the jupyter notebook used to run the simulation and perform the analysis
-- all data is generated synthetically within the Monte Carlo simulations.
+- all data is generated synthetically within the Monte Carlo simulations
 
 ---
 
@@ -110,24 +110,16 @@ It lists the mean number of core-collapse supernovae as well as the correspondin
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
 |--------:|------------:|-----------:|----------------:|-----------------:|
-|   30.00 |      223.03 |      13.72 |          200.90 |           248.00 |
-|   50.00 |      244.84 |      15.45 |          218.00 |           271.52 |
-|   80.00 |      257.87 |      15.32 |          230.90 |           288.05 |
-|  120.00 |      262.15 |      14.24 |          236.00 |           286.05 |
-|  150.00 |      265.78 |      16.05 |          237.47 |           292.00 |
-|  200.00 |      266.52 |      15.80 |          236.47 |           295.57 |
-
-## Model Limitations 
-
-The focus is on core-collapse supernovae.  
-Type Ia supernovae do not occur in the model, as binary stellar evolution is not included.   
-Additionly, no time evolution or delay times are modeled.  
-The results should therefore be interpreted as comparative trends,
-not as absolute astrophysical supernova rates.
+|      30 |      226.27 |    15.9835 |         196.475 |          259.2   |
+|      50 |      246.07 |    16.642  |         211     |          277     |
+|      80 |      259.83 |    15.714  |         231.475 |          289     |
+|     120 |      261.58 |    14.1836 |         235.475 |          286.575 |
+|     150 |      264.27 |    17.8958 |         227.475 |          296.525 |
+|     200 |      267.43 |    16.2706 |         236     |          296.525 | 
 
 ## Additional Results
 
-A concise summary of the numerical results, including a short interpretation and further details 
+A concise summary of the numerical results, including a short interpretation and details 
 on the model limitations, is provided in a separate report:
 [`reports/supernova_results.md`](reports/supernovae_results.md)
 
@@ -143,8 +135,7 @@ This ensures that the simulation can be reproduced with identical library versio
 
 - Python version: as specified in `environment.yml`
 - All required dependencies are listed explicitly in the environment file
-- A fixed random seed is used in the Monte Carlo simulation to ensure
-  deterministic results
+- A fixed random seed is used in the Monte Carlo notebook to ensure same results
 
 When the environment is created from the provided file and the same code is used,
 the simulation results are fully reproducible.
@@ -180,6 +171,6 @@ the simulation results are fully reproducible.
 ## Author / Context
 
 This project was developed as part of a university-level project on simulation tools.  
-more information in [`reports/ABOUT.txt`](reports/ABOUT.txt)
+More information in [`reports/ABOUT.txt`](reports/ABOUT.txt)
 
 ---

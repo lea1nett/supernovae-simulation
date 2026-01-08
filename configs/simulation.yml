@@ -1,23 +1,35 @@
 # Simulation configuration file
-# parameters are defined in the notebook 'monte_carlo.ipynb'
-# This file is additionally used to store metadata about the simulation
+# parameters are mainly defined in the notebook 'monte_carlo.ipynb'
+# This file is additionally used to store and compile metadata about the simulation
+# and can be used for future projects
 
-random_seed: 42
+SEED: 42
+
+stellar_mass:
+  m_min: 0.1
+  m_max: 100.0
+  imf_slope: -2.35   
+  
+metallicity:
+  metallicity_min: 0.001
+  metallicity_max: 0.02
+  metallicity_distribution: "lognormal"
 
 monte_carlo:
   n_stars: 100000
   n_realizations: 100
-
-stellar_mass:
-  m_min: 0.1
   m_max_values: [20, 40, 60, 80, 100]
 
-supernova:
+
+mass_thresholds:
   core_collapse_threshold: 8.0
+  neutron_star_threshold:
+  black_hole_min_mass: 3.0
 
-  
-Massengrenzen für Endzustände
+confidence_intervals:
+  68: 0.68
+  95: 0.95
 
-Anzahl Sterne pro Population
-
-Konfidenzniveau (68 %, 95 %)
+output:
+  figures_dir: "figures"
+  results_file: "simulation_results.csv"
