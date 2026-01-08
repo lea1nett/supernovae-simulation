@@ -1,7 +1,4 @@
-![Logo](./configs/logo.jpg)
 <img src="configs/logo.jpg" alt="Logo" width="80" align="left" />
-
-# Projektname
 
 # Monte Carlo Simulation of Supernova Rates
 
