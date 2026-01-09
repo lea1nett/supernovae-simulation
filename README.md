@@ -107,7 +107,7 @@ The table below summarizes representative results of the Monte Carlo simulation.
 It lists the mean number of core-collapse supernovae as well as the corresponding
 95% confidence intervals for different values of the maximum stellar mass.
 
-*(The table was automatically generated from simulation results.)*
+*(The table was automatically generated from the simulation results.)*
 
 |   M_max |   CCSN_mean |   CCSN_std |   CCSN_CI95_low |   CCSN_CI95_high |
 |--------:|------------:|-----------:|----------------:|-----------------:|
@@ -128,9 +128,7 @@ on the model limitations, is provided in a separate report:
 
 ## Reproducibility
 
-The simulation results are reproducible in a statistical sense.
-
-The simulation environment is fully specified using a Conda environment file
+The simulation environment is specified using a Conda environment file
 ([`environment.yml`](environment.yml)).  
 This ensures that the simulation can be reproduced with identical library versions across different systems.
 
